@@ -15,7 +15,7 @@
 
 架构适配安装 (Arch-Specific Setup)：自动识别 Pi 3 的 aarch64 或 armv7l 架构，精准匹配 Node.js 22 LTS 稳定版。
 
-权限与路径自动校正 (Prefix & Path Fix)：将 NPM 全局目录重定向至家目录，并手动修复因权限冲突而缺失的 openclaw 二进制链接。
+权限与路径自动校正 (Prefix & Path Fix)：将 NPM 全局目录重定向至 /home 目录，并手动修复因权限冲突而缺失的 openclaw 二进制链接。
 
 智能进程锁解除 (Apt Lock Solver)：通过轮询检测并安全清理被占用的系统更新锁，防止安装流程中途中断。
 
